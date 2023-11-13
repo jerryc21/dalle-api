@@ -1,0 +1,116 @@
+/* Default styles for larger screens */
+.ai-image-generator {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.header {
+    font-size: 70px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span {
+    color: #DE1B89;
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-loading img {
+    width: 512px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 1000px; /* Set a maximum width for larger screens */
+    height: 90px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    background: #1F3540;
+    margin: 0 20px; /* Add some margin to the sides for larger screens */
+}
+
+.search-input {
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for larger screens */
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 15px; /* Adjust padding for smaller screens */
+    padding-right: 15px; /* Adjust padding for smaller screens */
+}
+
+.generate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px; /* Set a maximum width for larger screens */
+    height: 85px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #DE1B89;
+    cursor: pointer;
+}
+
+.loading-bar {
+    width: 0px;
+    height: 8px;
+    background: #DE1B89;
+}
+
+.loading-text {
+    font-size: 18px;
+}
+
+.loading-bar-full {
+    width: 100%; /* Adjust to full width for smaller screens */
+    height: 8px;
+    background: #DE1B89;
+    transition: 15s;
+}
+
+.display-none {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .ai-image-generator {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        gap: 20px;
+    }
+
+    .header {
+        font-size: 40px;
+        padding-bottom: 15px;
+    }
+
+    .search-box {
+        height: 70px;
+    }
+
+    .search-input {
+        font-size: 16px;
+    }
+
+    .generate-btn {
+        height: 70px;
+        font-size: 18px;
+    }
+}
